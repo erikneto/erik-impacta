@@ -51,7 +51,7 @@ app.get('/api/mensagem/:mensagem', (req, res) => {
   var payload = {
     workspace_id: workspace,
     context: context,
-    input: req.params.mensagem
+    input: {text: req.params.mensagem }
   };
 
   // Send the input to the conversation service
