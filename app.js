@@ -37,8 +37,6 @@ var conversation = new Conversation({
 
 let context = {};
 
-
-
 app.get('/api/mensagem/:mensagem', (req, res) => {
   var workspace = process.env.WORKSPACE_ID || '<workspace-id>';
   if (!workspace || workspace === '<workspace-id>') {
@@ -59,7 +57,7 @@ app.get('/api/mensagem/:mensagem', (req, res) => {
     if (err) {
       return res.status(err.code || 500).json(err);
     }
-    return res.json([{ 'text': resposta.output.text[0] }]);
+    return res.json([{ 'text': data.output.text[0] }]);
   });
 });
 
