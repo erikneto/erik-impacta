@@ -13,3 +13,4 @@ applications:
   - Conversation-81
   env:
     NPM_CONFIG_PRODUCTION: false
+    WORKSPACE_ID: 2fb244b1-f7c2-4422-8dbb-f34dd6188fc0
